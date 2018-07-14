@@ -41,7 +41,7 @@ p <- p + scale_x_log10()
 #' convey continent by color: MAP continent variable to aesthetic color
 p + geom_point(aes(color = continent))
 ## add summary(p)!
-plot(gapminder, aes(x = gdpPercap, y = lifeExp, color = continent)) +
+ggplot(gapminder, aes(x = gdpPercap, y = lifeExp, color = continent)) +
   geom_point() + scale_x_log10() # in full detail, up to now
 
 #' address overplotting: SET alpha transparency and size to a value
